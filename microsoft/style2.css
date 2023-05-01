@@ -1,0 +1,55 @@
+:root{
+    --theme:#0067b8;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    padding: 0!important;
+    margin:0 !important;
+}
+a{
+    color:var(--theme)!important;
+    font-weight:500;
+}
+
+.btn::after{
+    content: '>';
+    position: absolute;
+    font-size: x-large;
+    right:-24px;
+    top:-8px;
+}
+
+.upper::before{
+    content: '↑';
+    position: absolute;
+    font-size: x-large;
+    
+    left:-20px;
+    top:-8px;
+}
+
+section button{
+    background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15));
+}
+
+
+@media only screen and (max-width: 540px){
+.navBar-lg{
+    display: none !important;
+    
+}
+    .navBar-sm{
+        /* background-color: #0067b8; */
+        display:flex !important;
+    }
+.large-img{
+    display: none;
+}
+    .small-img{
+        display:flex !important;
+    }
+}
